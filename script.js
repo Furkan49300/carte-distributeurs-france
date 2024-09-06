@@ -19,7 +19,7 @@ function findOverlappingZones(distributors) {
     return zoneMap;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var mymap = L.map('mapid').setView([46.2276, 2.2137], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(geojsonData => {
                     L.geoJson(geojsonData, {
                         onEachFeature: onEachFeature(distributors, zoneMap),
-                        style: function(feature) {
+                        style: function (feature) {
                             const departmentCode = feature.properties.code.padStart(2, '0');
                             let hasDistributor = zoneMap.has(departmentCode);
                             return {
@@ -45,42 +45,43 @@ document.addEventListener('DOMContentLoaded', function() {
                                 fillColor: hasDistributor ? (zoneMap.get(departmentCode).length > 1 ? 'blue' : 'green') : 'white'
                             };
                         }
-                        
+
                     }).addTo(mymap);
                 });
         });
 });
 
 function onEachFeature(distributors, zoneMap) {
-    return function(feature, layer) {
+    return function (feature, layer) {
         const departmentCode = feature.properties.code.padStart(2, '0');
         const distributorsInZone = zoneMap.get(departmentCode);
 
         if (distributorsInZone) {
-            let popupContent = '<b>Distributors:</b><br>';
+            let popupContent = '<b>Distributors:</b><br><br>';
             distributorsInZone.forEach(d => {
-                popupContent += `<b>${d.Distributeur}</b><br>` +
-                                `Address: ${d.Adresse}<br>` +
-                                `Responsible: ${d.Responsable}<br>` +
-                                `Email: <a href="mailto:${d.mail}">${d.mail}</a><br>` +
-                                `Phone: ${d.Téléphone}<br><br>`;
+                popupContent += `<b>${d.Distributeur}</b><br> Products : ${d.Produit}<br>
+            Address: ${d.Adresse}<br>
+            Responsible: ${d.Responsable}<br>
+            Email: <a href="mailto:${d.mail}">${d.mail}</a><br>
+            Phone: ${d.Téléphone}<br><br>`;
             });
             layer.bindPopup(popupContent);
-
-            layer.on({
-                mouseover: function(e) {
-                    var layer = e.target;
-                    layer.setStyle({
-                        fillOpacity: 1  // Increase opacity on hover
-                    });
-                },
-                mouseout: function(e) {
-                    var layer = e.target;
-                    layer.setStyle({
-                        fillOpacity: 0.3  // Return to lower opacity on mouse out
-                    });
-                }
-            });
         }
-    };
-}
+
+
+        layer.on({
+            mouseover: function (e) {
+                var layer = e.target;
+                layer.setStyle({
+                    fillOpacity: 1  // Increase opacity on hover
+                });
+            },
+            mouseout: function (e) {
+                var layer = e.target;
+                layer.setStyle({
+                    fillOpacity: 0.3  // Return to lower opacity on mouse out
+                });
+            }
+        });
+    }
+};
