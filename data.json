@@ -13,18 +13,6 @@
     },
     {
         "Gestionnaire": "Alexis  Spiesser",
-        "Distributeur": "Servident",
-        "Adresse": "44230",
-        "Zone": "44 - 49 - 53 - 72 - 85",
-        "Responsable": "Michael Domenichini",
-        "mail": "servident@wanadoo.fr",
-        "Téléphone": "02 40 80 62 02",
-        "Journée découverte": "Programmée",
-        "lieu": "Saint-Sébastien-sur-Loire",
-        "Dentiste référent?": ""
-    },
-    {
-        "Gestionnaire": "Alexis  Spiesser",
         "Distributeur": "DENTAL PREMIUM",
         "Adresse": "59320 3 RUE DES MEUNIERS",
         "Zone": "02 - 59 - 60 - 62 - 80",
@@ -710,7 +698,7 @@
         "Gestionnaire": "Alexis Spiesser",
         "Distributeur": "SERVIDENT",
         "Adresse": "3 AVENUE JULES VERNE",
-        "Zone": "44",
+        "Zone": "44 - 49 - 53 - 72 - 85",
         "Responsable": "MICKAEL DOMENICHINI",
         "mail": "Mickael.domenichini@servident.fr",
         "Téléphone": "",
