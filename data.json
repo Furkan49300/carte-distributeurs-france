@@ -50,13 +50,37 @@
     {
         "Gestionnaire": "Isabelle Ouvrard",
         "Distributeur": "LE MONDE DENTAIRE AVIGNON",
-        "Adresse": "5 ROUTE DE L'OUSSERE",
-        "Zone": "13 - 30 - 34 - 84",
+        "Adresse": "354C RUE DU BON VENT",
+        "Zone": "84",
         "Responsable": "FABRICE TERRIN",
-        "mail": "fabrice.terrin@lmdfrance.fr",
-        "Téléphone": "04 90 23 90 29 ",
+        "mail": "lmd84@lmdfrance.fr",
+        "Téléphone": "04 26 85 07 21",
         "Journée découverte": "Programmée",
         "lieu": "AVIGNON",
+        "Dentiste référent?": ""
+    },
+    {
+        "Gestionnaire": "Isabelle Ouvrard",
+        "Distributeur": "LE MONDE DENTAIRE MARSEILLE",
+        "Adresse": "44 AVENUE DE SAINT-ANTOINE",
+        "Zone": "13",
+        "Responsable": "FABRICE TERRIN",
+        "mail": "lmd13@lmdfrance.fr",
+        "Téléphone": "04 26 85 07 21",
+        "Journée découverte": "Programmée",
+        "lieu": "13015 MARSEILLE",
+        "Dentiste référent?": ""
+    },
+    {
+        "Gestionnaire": "Isabelle Ouvrard",
+        "Distributeur": "LE MONDE DENTAIRE MONTPELLIER",
+        "Adresse": "648 CHEMIN DES SURVEILLANTS",
+        "Zone": "34",
+        "Responsable": "FABRICE TERRIN",
+        "mail": "lmd34@lmdfrance.fr",
+        "Téléphone": "04 26 85 07 21",
+        "Journée découverte": "Programmée",
+        "lieu": "34400 LUNEL",
         "Dentiste référent?": ""
     },
     {
@@ -95,19 +119,6 @@
         "Date": "6-Jun-24",
         "lieu": "Casino Cap Breton",
         "Dentiste référent?": "Rodolphe Zunzarren"
-    },
-    {
-        "Gestionnaire": "JFR",
-        "Distributeur": "LMD",
-        "Adresse": "84140 AVIGNON",
-        "Zone": "13 - 30 - 34 - 84",
-        "Responsable": "Vanessa Vareille",
-        "mail": "vanessa.vareille@lmdfrance.fr",
-        "Téléphone": "06 18 91 08 20",
-        "Journée découverte": "En attente",
-        "Date": "27-Jun-24",
-        "lieu": "Avignon",
-        "Dentiste référent?": "David Potel"
     },
     {
         "Gestionnaire": "IO ",
