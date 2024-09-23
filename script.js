@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 color: 'white',
                                 weight: 2,
                                 opacity: 1,
-                                fillOpacity: hasDistributor ? 0.3 : 0.1, // Reduced opacity for areas without distributors
-                                fillColor: hasDistributor ? (zoneMap.get(departmentCode).length > 1 ? 'blue' : 'green') : 'white'
+                                fillOpacity: hasDistributor ? 0.3 : 0.3, // Reduced opacity for areas without distributors
+                                fillColor: hasDistributor ? (zoneMap.get(departmentCode).length > 1 ? 'blue' : 'green') : '#004899'
                             };
                         }
 
